@@ -62,7 +62,7 @@ FROM persons p
          RIGHT JOIN person_hobbies ph ON p.id = ph.person_id
          RIGHT JOIN hobbies h ON ph.hobby_id = h.id
 
-WHERE p.id IS NULL
+# WHERE p.id IS NULL
 GROUP BY p.id
 
 ORDER BY `Person ID` ASC
